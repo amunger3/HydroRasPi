@@ -1,0 +1,47 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "label": "Pip: List Outdated",
+      "type": "shell",
+      "command": "python -m pip list --outdated",
+      "windows": {
+        "command": "python -m pip list --outdated"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Python: Run File",
+      "type": "shell",
+      "command": "python -c main.py",
+      "windows": {
+        "command": "python -c main.py"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    }
+  ]
+}
